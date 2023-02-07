@@ -23,6 +23,11 @@
   gap: 11px;
   height: 26px;
   margin-right: 5px;
+  height: 37px;
+}
+
+.icons-card img {
+  width: 31px;
 }
 
 .title-card {
@@ -51,6 +56,10 @@
   display: flex;
   justify-content: flex-start;
   padding: 10px;
+}
+
+.container-info ul li {
+  list-style: none;
 }
 
 .recomendation-cards {

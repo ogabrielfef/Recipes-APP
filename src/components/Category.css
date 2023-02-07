@@ -1,0 +1,16 @@
+.filter-category {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.filter-category button {
+  border: 1px solid black;
+  display: block;
+  flex-wrap: wrap;
+  border-radius: 6px;
+  width: 75px;
+  height: auto;
+  font-weight: bold;
+}

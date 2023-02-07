@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import PropTypes from 'prop-types';
+import './Category.css';
 
 import foodContext from '../context/FoodContext';
 import useResultAPIs from '../services/combinerAPIs';
@@ -23,7 +24,7 @@ export default function Category({ pathname }) {
   const filtro = result?.slice(0, NUMBER);
 
   return (
-    <div>
+    <div className="filter-category">
       <button
         type="button"
         data-testid="All-category-filter"

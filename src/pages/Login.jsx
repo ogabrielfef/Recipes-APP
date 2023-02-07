@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import './Login.css';
 
 export default function Login({ history }) {
   const [email, setEmail] = useState('');
@@ -18,9 +19,10 @@ export default function Login({ history }) {
 
   return (
     <div className="conteinerLogin">
-      <form onSubmit={ (event) => event.preventDefault() }>
+      <form onSubmit={ (event) => event.preventDefault() } className="form-login">
         <label htmlFor="email">
           <input
+            placeholder="email"
             type="text"
             name="email"
             data-testid="email-input"
@@ -31,6 +33,7 @@ export default function Login({ history }) {
         </label>
         <label htmlFor="senha">
           <input
+            placeholder="senha"
             type="password"
             data-testid="password-input"
             id="senha"
